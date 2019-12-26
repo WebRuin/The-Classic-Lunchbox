@@ -17,7 +17,7 @@ module.exports = {
     ignored: /node_modules/
   },
   output: {
-    path: "/dist",
+    path: __dirname + "/dist",
     publicPath: "/",
     filename: "bundle.js"
   },
