@@ -1,0 +1,44 @@
+@import "colors";
+
+.header {
+  display: grid;
+  padding: 1rem;
+  position: relative;
+  grid-template-columns: auto 30px;
+
+  .open {
+    right: 0 !important;
+  }
+
+  .nav-menu {
+    width: 45vw;
+    height: 100vh;
+    padding-top: 3rem;
+    background-color: $bight-yellow;
+
+    position: absolute;
+    top: 0;
+    right: -70vh;
+    z-index: 9999;
+    overflow: hidden;
+
+    i {
+      color: $dark-purple;
+      position: absolute !important;
+      top: 1rem !important;
+      right: 1rem !important;
+    }
+
+    ul {
+      color: $dark-purple;
+
+      a {
+        display: inline-block;
+        width: 100%;
+        margin: 1rem 0 0 2.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
