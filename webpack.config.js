@@ -1,3 +1,4 @@
+const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -6,20 +7,21 @@ const devMode = process.env.NODE_ENV !== "production";
 const SRC_DIR = __dirname + "/src";
 const DIST_DIR = __dirname + "/dist";
 
-let isDevelopment = devMode ? true : false;
-
-console.log(isDevelopment);
+// let isDevelopment = devMode ? true : false;
 
 module.exports = {
-  entry: "./app.js",
+  entry: {
+    app: path.resolve(__dirname, "app.js"),
+    index: path.resolve(SRC_DIR, "index.html")
+  },
   watch: true,
   watchOptions: {
     ignored: /node_modules/
   },
   output: {
-    path: __dirname + "/dist",
     publicPath: "/",
-    filename: "bundle.js"
+    path: __dirname + "/dist",
+    filename: "./src/[name].bundle.js"
   },
   devtool: "source-map",
   module: {
@@ -32,11 +34,7 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
-            // importLoaders: 1,
             options: {
-              modules: {
-                localIdentName: "[name]__[local]___[hash:base64:5]"
-              },
               sourceMap: true
             }
           },
@@ -61,13 +59,14 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"]
+    extensions: ["*", ".js"]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: SRC_DIR + "/index.html",
-      filename: DIST_DIR + "/index.html"
+      inject: "head",
+      filename: path.resolve(DIST_DIR, "index.html"),
+      template: path.resolve(SRC_DIR, "index.html")
     }),
     new MiniCssExtractPlugin({
       filename: devMode ? "[name].css" : "[name].[hash].css",
@@ -77,6 +76,6 @@ module.exports = {
   devServer: {
     contentBase: DIST_DIR,
     hot: true,
-    port: 4444
+    port: 4400
   }
 };

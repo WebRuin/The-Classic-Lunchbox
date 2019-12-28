@@ -1,8 +1,13 @@
-@import "reset";
+@import url("https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap");
+@import url("https://css.gg/c");
 @import "header";
-
-$body-color: #333;
+@import "main";
+@import "reset";
+@import "typogrophy";
+@import "colors";
 
 body {
-  color: $body-color;
+  overflow-x: hidden;
+  color: $white;
+  background: $black;
 }

@@ -6,27 +6,29 @@
   position: relative;
   grid-template-columns: auto 30px;
 
-  .open {
-    right: 0 !important;
+  .gg-menu,
+  .gg-close-o {
+    cursor: pointer;
   }
 
   .nav-menu {
-    width: 45vw;
+    width: 500px;
     height: 100vh;
     padding-top: 3rem;
     background-color: $bight-yellow;
 
     position: absolute;
     top: 0;
-    right: -70vh;
-    z-index: 9999;
+    right: -500px;
+    z-index: 10;
     overflow: hidden;
 
     i {
       color: $dark-purple;
       position: absolute !important;
       top: 1rem !important;
-      right: 1rem !important;
+      right: 2rem !important;
+      z-index: 11;
     }
 
     ul {
@@ -35,10 +37,20 @@
       a {
         display: inline-block;
         width: 100%;
-        margin: 1rem 0 0 2.5rem;
         font-size: 2rem;
         font-weight: bold;
+        padding: 0.5rem;
+        margin: 0.5rem 0 0 3rem;
+
+        &:hover {
+          color: $white;
+          background: $dark-purple;
+        }
       }
     }
+  }
+
+  .open {
+    right: 0;
   }
 }
