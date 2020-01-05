@@ -88,7 +88,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>The Classic Lunchbox</title>
+    <title>Menu | The Classic Lunchbox</title>
     <link
       rel="stylesheet"
       href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
@@ -109,7 +109,7 @@
         </button>
         <ul>
           <li><a href="/" aria-label="Home">Home</a></li>
-          <li><a href="menu.html" aria-label="Our Menu">Our Menu</a></li>
+          <li><a href="/menu.html" aria-label="Our Menu">Our Menu</a></li>
           <li><a href="#" aria-label="Our Philosophy">Our Philosophy</a></li>
           <li><a href="#" aria-label="Meet the Team">Meet the Team</a></li>
           <li><a href="#" aria-label="Contact Us">Contact Us</a></li>
@@ -117,111 +117,90 @@
       </nav>
     </header>
     <main class="main">
-      <section class="main-content">
-        <figure>
-          <img
-            class="main-image"
-            src="https://res.cloudinary.com/tihos/image/upload/q_auto/v1577503955/bread-creamy-food-fruits-236834_wong52.jpg"
-            alt="Peanut Butter & Jelly | Main Image"
-          />
-        </figure>
-        <h2 class="main-h2">Rediscover the Peanut Butter & Jelly</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet
-          suspendisse interdum consectetur libero. Vitae turpis massa sed
-          elementum tempus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec.
-          Nunc sed augue lacus viverra vitae congue eu. Pharetra diam sit amet
-          nisl. Mattis pellentesque id nibh tortor id aliquet lectus proin.
-          Ullamcorper malesuada proin libero nunc. Diam vel quam elementum
-          pulvinar etiam non. Sit amet risus nullam eget. Ut sem nulla pharetra
-          diam sit amet nisl suscipit. Tincidunt dui ut ornare lectus sit. Velit
-          sed ullamcorper morbi tincidunt ornare massa eget egestas. Maecenas
-          accumsan lacus vel facilisis volutpat est velit egestas. Aliquam
-          faucibus purus in massa.
-        </p>
-      </section>
-
-      <section class="main-featured-menu">
-        <div class="featured">
-          <h3>Featured Sandwiches</h3>
-        </div>
+      <section class="page-main-content">
+        <div class="title"><h2>Menu</h2></div>
         <article class="menu-item">
-          <div class="menu-item-left">
+          <div class="left">
             <figure>
               <img
                 class="menu-image"
-                src="https://res.cloudinary.com/tihos/image/upload/c_scale,q_auto,w_300/v1577563406/pbandj-1080x675_cduioi.jpg"
+                src="https://res.cloudinary.com/tihos/image/upload/c_crop,h_200,q_auto,w_200/v1577503955/bread-creamy-food-fruits-236834_wong52.jpg"
                 alt="Peanut Butter & Jelly | Menu Image"
               />
             </figure>
-            <button aria-label="Price" class="price-button" href="#">$6</button>
           </div>
-          <div class="menu-item-content">
-            <a href="#"><h3>The Classic</h3></a>
+          <div class="right">
+            <h4>The Classic</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-          </div>
-        </article>
-        <article class="menu-item">
-          <div class="menu-item-left">
-            <figure>
-              <img
-                class="menu-image"
-                src="https://res.cloudinary.com/tihos/image/upload/c_scale,q_auto,w_300/v1577503955/bread-creamy-food-fruits-236834_wong52.jpg"
-                alt="Peanut Butter & Jelly | Menu Image"
-              />
-            </figure>
-            <button aria-label="Price" class="price-button" href="#">$7</button>
-          </div>
-          <div class="menu-item-content">
-            <a href="#"><h3>Turkey and Cranberry Sauce</h3></a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </article>
-        <article class="menu-item">
-          <div class="menu-item-left">
-            <figure>
-              <img
-                class="menu-image"
-                src="https://res.cloudinary.com/tihos/image/upload/c_scale,q_auto,w_300/v1577563406/pbandj-1080x675_cduioi.jpg"
-                alt="Peanut Butter & Jelly | Menu Image"
-              />
-            </figure>
             <button aria-label="Price" class="price-button" href="#">
               $10
             </button>
           </div>
-          <div class="menu-item-content">
-            <a href="#"><h3>Gingerbread</h3></a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
         </article>
         <article class="menu-item">
-          <div class="menu-item-left">
+          <div class="left">
             <figure>
               <img
                 class="menu-image"
-                src="https://res.cloudinary.com/tihos/image/upload/c_scale,q_auto,w_300/v1577503955/bread-creamy-food-fruits-236834_wong52.jpg"
+                src="https://res.cloudinary.com/tihos/image/upload/c_crop,h_200,q_auto,w_200/v1577563406/pbandj-1080x675_cduioi.jpg"
                 alt="Peanut Butter & Jelly | Menu Image"
               />
             </figure>
-            <button aria-label="Price" class="price-button" href="#">$7</button>
           </div>
-          <div class="menu-item-content">
-            <a href="#"><h3>Hot Chocolate</h3></a>
+          <div class="right">
+            <h4>Turkey and Cranberry Sauce</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <button aria-label="Price" class="price-button" href="#">
+              $10
+            </button>
+          </div>
+        </article>
+        <article class="menu-item">
+          <div class="left">
+            <figure>
+              <img
+                class="menu-image"
+                src="https://res.cloudinary.com/tihos/image/upload/c_crop,h_200,q_auto,w_200/v1577503955/bread-creamy-food-fruits-236834_wong52.jpg"
+                alt="Peanut Butter & Jelly | Menu Image"
+              />
+            </figure>
+          </div>
+          <div class="right">
+            <h4>Gingerbread</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button aria-label="Price" class="price-button" href="#">
+              $10
+            </button>
+          </div>
+        </article>
+        <article class="menu-item">
+          <div class="left">
+            <figure>
+              <img
+                class="menu-image"
+                src="https://res.cloudinary.com/tihos/image/upload/c_crop,h_200,q_auto,w_200/v1577563406/pbandj-1080x675_cduioi.jpg"
+                alt="Peanut Butter & Jelly | Menu Image"
+              />
+            </figure>
+          </div>
+          <div class="right">
+            <h4>Hot Chocolate</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button aria-label="Price" class="price-button" href="#">
+              $10
+            </button>
           </div>
         </article>
       </section>

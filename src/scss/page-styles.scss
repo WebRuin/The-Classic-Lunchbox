@@ -1,0 +1,55 @@
+.page-main-content {
+  width: 85vw;
+  padding: 2rem;
+  margin: 0 auto;
+  background: $dark-purple;
+  box-shadow: 0px 5px 15px -5px #000000;
+
+  .title {
+    width: 225px;
+    padding: 1rem 1rem 0.5rem 2rem;
+    margin: -4.75rem 0 0 1rem;
+    background: $light-purple;
+    transform: skew(-15deg);
+    box-shadow: 0px 5px 15px -5px #000000;
+
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      transform: skew(15deg);
+      padding-right: 1.5rem;
+      text-shadow: 3px 3px 0px #bf6f1a, 6px 6px 0px #3a008e, 9px 9px 0px #66340f,
+        12px 12px 0px #bf6f1a;
+    }
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .page-main-content {
+    width: 95%;
+    padding: 0.75rem;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .page-main-content {
+    width: 95%;
+    padding: 0.75rem;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .page-main-content {
+    width: 95%;
+    padding: 0.75rem;
+  }
+}

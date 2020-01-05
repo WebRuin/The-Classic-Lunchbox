@@ -1,4 +1,4 @@
-@import "colors";
+@import 'base/colors';
 
 .main {
   display: flex;
@@ -29,48 +29,29 @@
   }
 
   .main-featured-menu {
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
     margin-top: 1.25rem;
+    position: relative;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    article.menu-item {
-      width: calc(50% - 1rem);
-      display: flex;
-      padding: 0.75rem 0.5rem 3rem 0.5rem;
-      justify-content: space-between;
+    .featured {
+      width: 287px;
+      position: absolute;
+      top: -1.5rem;
+      left: 2rem;
+      padding: 1rem;
       background: #ff33e3;
-      margin: 0.5rem;
+      -webkit-transform: skew(-15deg);
+      transform: skew(-15deg);
+      box-shadow: 0px 5px 15px -5px #000000;
 
-      .menu-item-left {
-        width: 30%;
-        figure {
-          width: 100%;
-
-          img.menu-image {
-            margin: 0 auto;
-            width: 98%;
-            box-shadow: 0px 5px 15px -5px #000000;
-          }
-        }
-
-        a.price-button {
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          height: 40px;
-          padding: 0 8px;
-          margin: 1.5rem auto 0 auto;
-          background: $dark-teal;
-        }
-      }
-
-      .menu-item-content {
-        width: 68%;
-        color: $white;
-        padding-left: 0.75rem;
+      h3 {
+        transform: skew(15deg);
+        text-shadow: 2px 2px 0px #bf6f1a, 4px 4px 0px #3a008e,
+          6px 6px 0px #66340f, 8px 8px 0px #bf6f1a;
       }
     }
 
