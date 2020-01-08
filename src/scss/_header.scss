@@ -3,6 +3,7 @@
 .header {
   display: grid;
   position: relative;
+  background: $dark-teal;
   grid-template-columns: 600px auto 80px;
 
   .logo {
@@ -44,7 +45,7 @@
     z-index: 10;
     overflow: hidden;
 
-    i {
+    .close-menu {
       color: $dark-purple;
       position: absolute !important;
       top: 2.3rem !important;
@@ -56,17 +57,31 @@
     ul {
       color: $dark-purple;
 
-      a {
-        display: inline-block;
-        width: 100%;
-        font-size: 2rem;
-        font-weight: bold;
-        padding: 0.5rem;
-        margin: 0.5rem 0 0 3rem;
+      li {
+        a {
+          width: 100%;
+          font-size: 2rem;
+          font-weight: bold;
+          padding: 0.5rem;
+          margin: 0.5rem 0 0 3rem;
 
-        &:hover {
-          color: $white;
-          background: $dark-purple;
+          display: flex;
+          justify-content: start;
+
+          &:hover {
+            color: $white;
+            background: $dark-purple;
+          }
+
+          i {
+            font-size: 1.2rem;
+            margin-right: 1.2rem;
+            color: rgb(238, 238, 238);
+            text-shadow: 2px 2px 0px #bf6f1a, 4px 4px 0px #3a008e,
+              6px 6px 0px #66340f, 8px 8px 0px #bf6f1a;
+
+            transform: rotate(45deg);
+          }
         }
       }
     }

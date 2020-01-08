@@ -192,6 +192,30 @@ module.exports = (env = {}, argv) => {
             removeStyleLinkTypeAttributes: true
           }
         }),
+        new plugins.html({
+          template: './subPages/our-philosophy.html',
+          filename: 'our-philosophy.html',
+          minify: {
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true
+          }
+        }),
+        new plugins.html({
+          template: './subPages/contact-us.html',
+          filename: 'contact-us.html',
+          minify: {
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true
+          }
+        }),
+        new plugins.html({
+          template: './subPages/meet-the-team.html',
+          filename: 'meet-the-team.html',
+          minify: {
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true
+          }
+        }),
         new plugins.progress({
           color: '#b3129d'
         })

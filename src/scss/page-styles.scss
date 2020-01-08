@@ -6,7 +6,6 @@
   box-shadow: 0px 5px 15px -5px #000000;
 
   .title {
-    width: 225px;
     padding: 1rem 1rem 0.5rem 2rem;
     margin: -4.75rem 0 0 1rem;
     background: $light-purple;
@@ -20,6 +19,22 @@
       padding-right: 1.5rem;
       text-shadow: 3px 3px 0px #bf6f1a, 6px 6px 0px #3a008e, 9px 9px 0px #66340f,
         12px 12px 0px #bf6f1a;
+    }
+
+    &.menu {
+      width: 225px;
+    }
+
+    &.philosophy {
+      width: 424px;
+    }
+
+    &.meet {
+      width: 440px;
+    }
+
+    &.contact {
+      width: 335px;
     }
   }
 }
