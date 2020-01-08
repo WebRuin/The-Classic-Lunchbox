@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const minJSON = require('jsonminify');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const plugins = {
   progress: require('webpackbar'),
@@ -218,7 +219,28 @@ module.exports = (env = {}, argv) => {
         }),
         new plugins.progress({
           color: '#b3129d'
-        })
+        }),
+        new CopyPlugin([
+          {
+            from: './favicon.ico',
+            to: './',
+            force: true
+          }
+        ]),
+        new CopyPlugin([
+          {
+            from: './asset-manifest.json',
+            to: './',
+            force: true
+          }
+        ]),
+        new CopyPlugin([
+          {
+            from: './favicons/**/*',
+            to: './',
+            force: true
+          }
+        ])
       ];
 
       const production = [
