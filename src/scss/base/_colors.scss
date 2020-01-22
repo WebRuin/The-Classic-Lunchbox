@@ -3,8 +3,17 @@ $dark-text: #333;
 $black: $dark-text;
 $white: $light-text;
 
-$dark-purple: #b3129d;
-$light-purple: #ff33e3;
-$bright-yellow: #ffdd4d;
-$light-teal: #14ccbe;
-$dark-teal: #03736a;
+// Night Colors
+$colors: get('colors');
+$dark-purple: get($colors, darkPurple);
+$light-purple: get($colors, lightPurple);
+$bright-yellow: get($colors, brightYellow);
+$light-teal: get($colors, lightTeal);
+$dark-teal: get($colors, darkTeal);
+
+// Day Colors
+$day-dark-purple: #b34aa5;
+$day-light-purple: #ff82ed;
+$day-bright-yellow: #ffec9c;
+$day-light-teal: #61ccbf;
+$day-dark-teal: #6ab3ac;
